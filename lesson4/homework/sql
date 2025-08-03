@@ -1204,3 +1204,4 @@ FROM Customers
 WHERE Email LIKE '%@gmail.com' AND Country <> 'USA';
 
 
+
