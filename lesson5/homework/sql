@@ -521,3 +521,4 @@ SELECT
   END AS DiscountPercentage
 FROM Orders;
 
+
