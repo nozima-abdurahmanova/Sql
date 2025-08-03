@@ -1,4 +1,4 @@
--- Lesson 1 – Easy Questions
+-- Lesson 1 â€“ Easy Questions
 
 -- 1. Define the following terms:
 
@@ -52,12 +52,12 @@ select * from Students;
 -- SSMS (SQL Server Management Studio): A GUI tool to manage SQL Server databases.
 -- SQL: A language used to interact with relational databases like SQL Server.
 
- --Lesson 1 – Hard
--- DQL (Data Query Language): SELECT – used to retrieve data.
--- DML (Data Manipulation Language): INSERT, UPDATE, DELETE – used to modify data.
--- DDL (Data Definition Language): CREATE, ALTER, DROP – used to define database structure.
--- DCL (Data Control Language): GRANT, REVOKE – used to control access.
--- TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT – used to manage transactions.
+ --Lesson 1 â€“ Hard
+-- DQL (Data Query Language): SELECT â€“ used to retrieve data.
+-- DML (Data Manipulation Language): INSERT, UPDATE, DELETE â€“ used to modify data.
+-- DDL (Data Definition Language): CREATE, ALTER, DROP â€“ used to define database structure.
+-- DCL (Data Control Language): GRANT, REVOKE â€“ used to control access.
+-- TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT â€“ used to manage transactions.
 
 -- Steps to restore AdventureWorksDW2022.bak:
 -- 1. Download the .bak file from the provided GitHub link.
@@ -65,6 +65,7 @@ select * from Students;
 -- 3. Right-click on "Databases" > "Restore Database".
 -- 4. Choose "Device" and browse to the downloaded .bak file.
 -- 5. Click OK to start restoring.
+
 
 
 
