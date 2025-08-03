@@ -465,3 +465,4 @@ FROM Products p
 JOIN Sales s ON p.ProductID = s.ProductID
 GROUP BY p.ProductName;
 
+
