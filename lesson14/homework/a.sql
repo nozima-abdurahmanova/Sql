@@ -503,3 +503,4 @@ SELECT
     (d.daily_sales * 100.0) / t.total_sales AS PercentageOfWeek
 FROM daily d
 JOIN total_week t ON d.week_num = t.week_num;
+
