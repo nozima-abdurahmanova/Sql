@@ -41,12 +41,12 @@ where total = (select max(total) from cte as c2 where cte.customerid=c2.customer
 DECLARE @CurrentOrderID INT;
 DECLARE @MaxOrderID INT;
 
--- Находим первый и последний ID
+-- ГЌГ ГµГ®Г¤ГЁГ¬ ГЇГҐГ°ГўГ»Г© ГЁ ГЇГ®Г±Г«ГҐГ¤Г­ГЁГ© ID
 SELECT @CurrentOrderID = MIN(OrderID), 
        @MaxOrderID = MAX(OrderID)
 FROM Orders;
 
--- Пока не дошли до последнего заказа
+-- ГЏГ®ГЄГ  Г­ГҐ Г¤Г®ГёГ«ГЁ Г¤Г® ГЇГ®Г±Г«ГҐГ¤Г­ГҐГЈГ® Г§Г ГЄГ Г§Г 
 WHILE @CurrentOrderID <= @MaxOrderID
 BEGIN
     DECLARE @Amount INT;
@@ -54,9 +54,9 @@ BEGIN
     FROM Orders
     WHERE OrderID = @CurrentOrderID;
 
-    PRINT CONCAT('Заказ №', @CurrentOrderID, ' — сумма: ', @Amount);
+    PRINT CONCAT('Г‡Г ГЄГ Г§ В№', @CurrentOrderID, ' вЂ” Г±ГіГ¬Г¬Г : ', @Amount);
 
-    SET @CurrentOrderID = @CurrentOrderID + 1; -- идём к следующему заказу
+    SET @CurrentOrderID = @CurrentOrderID + 1; -- ГЁГ¤ВёГ¬ ГЄ Г±Г«ГҐГ¤ГіГѕГ№ГҐГ¬Гі Г§Г ГЄГ Г§Гі
 END;
 CREATE TABLE Employee (
   EmpID INT,
@@ -165,5 +165,6 @@ INSERT INTO Sales (SalesID, EmployeeID, ProductID, SalesAmount, SaleDate) VALUES
 (59, 9, 5, 2350.00, '2025-07-17'),
 (60, 10, 6, 2450.00, '2025-08-01');
 --Use a CTE to calculate the sales difference between the current month and the previous month.(Sales)
-CAST(123.45 AS INT)   -- результат: 123
+CAST(123.45 AS INT)   -- Г°ГҐГ§ГіГ«ГјГІГ ГІ: 123
+
 
